@@ -1,0 +1,22 @@
+<script>
+function Charge_maximale()
+	{
+	var valeur1 = document.getElementById( "MonTextBox1" ) ;
+	var valeur2 = document.getElementById( "MonTextBox2" ) ;
+	var resultat = document.getElementById( "MonTextBox3" ) ;
+	resultat.value = Math.round(parseInt(valeur1.value) / 1.0278-(0.0278*(parseInt(valeur2.value)))) ;
+	}
+
+</script>
+<label>La charge optimale ?</label>
+<input id="MonTextBox1" />
+<br>
+<label>Le nombre de r�p�titon ?</label>
+<input id="MonTextBox2" />
+<br>
+<label>Ta charge maximale est donc de:</label>
+<input id="MonTextBox3" />
+<br>
+<button onclick="Charge_maximale() ;">R�sulats</button>
+
+
